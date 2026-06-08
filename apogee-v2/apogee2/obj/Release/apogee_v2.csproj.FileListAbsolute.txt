@@ -1,0 +1,7 @@
+E:\pawel\prog\csprojects\apogee-v2\apogee2\bin\Release\apogee_v2.exe
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee_v2.csprojResolveAssemblyReference.cache
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee2.Form_fill.resources
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee2.Frm_formulas.resources
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee2.MainForm.resources
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee_v2.csproj.GenerateResource.Cache
+E:\pawel\prog\csprojects\apogee-v2\apogee2\obj\Release\apogee_v2.exe
