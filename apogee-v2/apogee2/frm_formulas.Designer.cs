@@ -40,6 +40,7 @@ namespace apogee2
 			this.num_first = new System.Windows.Forms.NumericUpDown();
 			this.num_last = new System.Windows.Forms.NumericUpDown();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.chk_res = new System.Windows.Forms.CheckBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.lbl_nombre = new System.Windows.Forms.Label();
@@ -63,10 +64,10 @@ namespace apogee2
 			// 
 			// txt_res
 			// 
-			this.txt_res.Location = new System.Drawing.Point(14, 345);
+			this.txt_res.Location = new System.Drawing.Point(11, 417);
 			this.txt_res.Multiline = true;
 			this.txt_res.Name = "txt_res";
-			this.txt_res.Size = new System.Drawing.Size(479, 104);
+			this.txt_res.Size = new System.Drawing.Size(490, 104);
 			this.txt_res.TabIndex = 0;
 			// 
 			// num_first
@@ -98,6 +99,7 @@ namespace apogee2
 			// panel1
 			// 
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel1.Controls.Add(this.chk_res);
 			this.panel1.Controls.Add(this.label6);
 			this.panel1.Controls.Add(this.label5);
 			this.panel1.Controls.Add(this.lbl_nombre);
@@ -105,8 +107,18 @@ namespace apogee2
 			this.panel1.Controls.Add(this.num_tot);
 			this.panel1.Location = new System.Drawing.Point(14, 97);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(479, 130);
+			this.panel1.Size = new System.Drawing.Size(487, 176);
 			this.panel1.TabIndex = 4;
+			// 
+			// chk_res
+			// 
+			this.chk_res.Location = new System.Drawing.Point(3, 85);
+			this.chk_res.Name = "chk_res";
+			this.chk_res.Size = new System.Drawing.Size(431, 37);
+			this.chk_res.TabIndex = 0;
+			this.chk_res.Text = "comptage d\'UE et vérification seuils à partir des résultats (coder ADM/COMP/AJ da" +
+			"ns les UEs)";
+			this.chk_res.UseVisualStyleBackColor = true;
 			// 
 			// label6
 			// 
@@ -127,7 +139,7 @@ namespace apogee2
 			// lbl_nombre
 			// 
 			this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_nombre.Location = new System.Drawing.Point(40, 88);
+			this.lbl_nombre.Location = new System.Drawing.Point(28, 126);
 			this.lbl_nombre.Name = "lbl_nombre";
 			this.lbl_nombre.Size = new System.Drawing.Size(214, 28);
 			this.lbl_nombre.TabIndex = 8;
@@ -137,17 +149,18 @@ namespace apogee2
 			// 
 			this.chk_nombre.Checked = true;
 			this.chk_nombre.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chk_nombre.Location = new System.Drawing.Point(13, 3);
+			this.chk_nombre.Location = new System.Drawing.Point(3, 6);
 			this.chk_nombre.Name = "chk_nombre";
-			this.chk_nombre.Size = new System.Drawing.Size(273, 27);
+			this.chk_nombre.Size = new System.Drawing.Size(481, 27);
 			this.chk_nombre.TabIndex = 6;
-			this.chk_nombre.Text = "vérification nombre d\'UE/ECTS";
+			this.chk_nombre.Text = "vérification nombre d\'UE/ECTS à partir des coefs et notes (calcul avec neutralisa" +
+			"tion)";
 			this.chk_nombre.UseVisualStyleBackColor = true;
 			// 
 			// num_tot
 			// 
 			this.num_tot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.num_tot.Location = new System.Drawing.Point(271, 86);
+			this.num_tot.Location = new System.Drawing.Point(248, 128);
 			this.num_tot.Name = "num_tot";
 			this.num_tot.Size = new System.Drawing.Size(87, 26);
 			this.num_tot.TabIndex = 4;
@@ -181,15 +194,15 @@ namespace apogee2
 			this.panel2.Controls.Add(this.numericUpDown2);
 			this.panel2.Controls.Add(this.label3);
 			this.panel2.Controls.Add(this.chk_seuil);
-			this.panel2.Location = new System.Drawing.Point(14, 233);
+			this.panel2.Location = new System.Drawing.Point(12, 296);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(476, 60);
+			this.panel2.Size = new System.Drawing.Size(487, 71);
 			this.panel2.TabIndex = 7;
 			// 
 			// numericUpDown2
 			// 
 			this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.numericUpDown2.Location = new System.Drawing.Point(156, 25);
+			this.numericUpDown2.Location = new System.Drawing.Point(162, 30);
 			this.numericUpDown2.Name = "numericUpDown2";
 			this.numericUpDown2.Size = new System.Drawing.Size(82, 26);
 			this.numericUpDown2.TabIndex = 2;
@@ -202,7 +215,7 @@ namespace apogee2
 			// label3
 			// 
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(93, 30);
+			this.label3.Location = new System.Drawing.Point(93, 35);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(111, 19);
 			this.label3.TabIndex = 1;
@@ -210,13 +223,11 @@ namespace apogee2
 			// 
 			// chk_seuil
 			// 
-			this.chk_seuil.Checked = true;
-			this.chk_seuil.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chk_seuil.Location = new System.Drawing.Point(12, 3);
+			this.chk_seuil.Location = new System.Drawing.Point(5, 3);
 			this.chk_seuil.Name = "chk_seuil";
-			this.chk_seuil.Size = new System.Drawing.Size(150, 24);
+			this.chk_seuil.Size = new System.Drawing.Size(346, 24);
 			this.chk_seuil.TabIndex = 0;
-			this.chk_seuil.Text = "vérification  seuils";
+			this.chk_seuil.Text = "vérification  seuils à partir des notes (calcul avec neutralisation)";
 			this.chk_seuil.UseVisualStyleBackColor = true;
 			// 
 			// label4
@@ -230,11 +241,11 @@ namespace apogee2
 			// 
 			// btn_calc
 			// 
-			this.btn_calc.Location = new System.Drawing.Point(29, 306);
+			this.btn_calc.Location = new System.Drawing.Point(14, 384);
 			this.btn_calc.Name = "btn_calc";
 			this.btn_calc.Size = new System.Drawing.Size(142, 27);
 			this.btn_calc.TabIndex = 9;
-			this.btn_calc.Text = "calculer formule";
+			this.btn_calc.Text = "calculer formule partielle";
 			this.btn_calc.UseVisualStyleBackColor = true;
 			this.btn_calc.Click += new System.EventHandler(this.Btn_calcClick);
 			// 
@@ -242,7 +253,7 @@ namespace apogee2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(515, 472);
+			this.ClientSize = new System.Drawing.Size(524, 533);
 			this.Controls.Add(this.btn_calc);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.panel2);
@@ -263,6 +274,7 @@ namespace apogee2
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.CheckBox chk_res;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Button btn_calc;

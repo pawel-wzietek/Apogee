@@ -73,10 +73,26 @@ namespace apogee2
 			}
               
 		   }
+		
+		if(chk_res.Checked)
 						
-				
-		 	
+			{
 			
+		    res += " et (";
+		    
+		   
+		    
+		    for(int i=(int)num_first.Value; i<=num_last.Value; i++)
+                
+		    { res += "R"+i.ToString().Trim();
+				if(i<num_last.Value) res+="+";
+			}
+              res+="="+num_tot.Text+")";
+		   }
+              
+		  	
+		 	
+		 
 			
 			
 		//res += num_first.ToString() + " "; 
